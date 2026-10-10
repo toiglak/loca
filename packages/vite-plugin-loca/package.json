@@ -1,0 +1,33 @@
+{
+	"name": "vite-plugin-loca",
+	"version": "0.1.0",
+	"description": "Expose a Vite dev server through Loca's local HTTPS router",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/toiglak/loca.git",
+		"directory": "packages/vite-plugin-loca"
+	},
+	"homepage": "https://github.com/toiglak/loca/tree/main/packages/vite-plugin-loca",
+	"bugs": {
+		"url": "https://github.com/toiglak/loca/issues"
+	},
+	"keywords": ["vite", "vite-plugin", "loca", "local-development"],
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"import": "./index.js"
+		}
+	},
+	"scripts": {
+		"test": "node --test"
+	},
+	"files": ["index.js", "index.d.ts", "README.md"],
+	"peerDependencies": {
+		"vite": ">=6"
+	},
+	"engines": {
+		"node": ">=20.19.0"
+	}
+}
